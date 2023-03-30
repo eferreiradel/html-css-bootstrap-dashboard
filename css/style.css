@@ -1,0 +1,20 @@
+/* * {
+    border: 1px solid dimgray;
+} */
+:root {
+  /* --color palette-- */
+  --brand-color-primary: rgb(48, 63, 100);
+}
+
+/* color */
+.bg--primary {
+  background-color: var(--brand-color-primary);
+}
+
+.vh {
+  height: 100vh;
+}
+
+#sideBar {
+  background-color: rgb(52, 60, 105);
+}
