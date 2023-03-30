@@ -19,34 +19,39 @@
   </head>
   <body>
     <header>
-      <nav class="navbar px-3 bg-light fixed-top">
-        <div class="navbar-brand">
-          <img src="./img/mobile-logo.png" width="50" />
+      <!-- navbar -->
+      <div class="container-fluid">
+        <div class="row">
+          <nav class="navbar fixed-top bg-light py-0">
+            <div class="navbar">
+              <img src="./img/mobile-logo.png" width="50" />
+            </div>
+          </nav>
         </div>
-        <div class="navbar-nav">TEST</div>
-      </nav>
+      </div>
     </header>
-    <div class="container-fluid">
+
+    <div class="container-fluid vh-100">
       <div class="row">
-        <!-- --sidebar-- -->
+        <!-- sidebar -->
         <div
-          class="col-2 col-md-1 bg--primary py-3 fixed-top vh-100 mt-5 pt-5 z-1 text-center text-white"
-          id="sideBar"
+          class="col-2 col-md-1 bg--primary text-center text-white just pt-5"
         >
-          <div class="row py-3">
+          <div class="row pt-5 py-3">
             <i class="fa-solid fa-house"></i>
           </div>
           <div class="row py-3">
-            <i class="fa-solid fa-chart-column"></i>
+            <i class="fa-solid fa-mug-hot"></i>
           </div>
           <div class="row py-3">
-            <i class="fa-solid fa-martini-glass"></i>
+            <i class="fa-solid fa-wine-bottle"></i>
           </div>
         </div>
+
         <!-- main -->
-        <main>
-          <div class="col-10 offset-2 pt-5 mt-5">LOREM</div>
-        </main>
+        <div
+          class="col-10 col-md-11 bg-primary vh-100 overflow-auto pt-5"
+        ></div>
       </div>
     </div>
   </body>
