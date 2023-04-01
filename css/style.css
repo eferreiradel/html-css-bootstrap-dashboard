@@ -1,20 +1,21 @@
 /* * {
   border: 1px solid dimgray;
 } */
-:root {
-  /* --color palette-- */
-  --brand-color-primary: rgb(48, 63, 100);
+
+.gap--1 {
 }
 
-/* color */
-.bg--primary {
-  background-color: var(--brand-color-primary);
+/* ....layout.... */
+.navbar--height {
+  height: 70px;
 }
-
-.vh {
-  height: 100vh;
+.sidebar--height {
+  height: calc(100vh - 70px);
 }
-
-#sideBar {
-  background-color: rgb(52, 60, 105);
+.main--height {
+  height: calc(100vh - 70px);
+}
+.badge--custom {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 50px;
 }
