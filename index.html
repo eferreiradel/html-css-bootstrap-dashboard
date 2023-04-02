@@ -41,13 +41,28 @@
       <div class="row">
         <!-- sidebar -->
         <div
-          class="col-2 col-md-1 bg-dark py-2 sidebar--height text-white py-4 px-2"
+          class="col-2 col-md-1 bg-dark py-2 sidebar--height text-white py-4"
         >
-          <nav>
-            <div class="container-d-flex text-center">
+          <nav class="py-2 px-1 text-center">
+            <!-- ....sidebar--element -->
+            <div class="container-d-flex mb-3">
               <a href="#" class="text-decoration-none text-white">
                 <i class="fa-solid fa-house"></i>
                 <span class="d-none d-lg-inline-block"> Home </span>
+              </a>
+            </div>
+            <!-- ....sidebar--element -->
+            <div class="container-d-flex mb-3">
+              <a href="#" class="text-decoration-none text-white">
+                <i class="fa-solid fa-face-grin-squint-tears"></i>
+                <span class="d-none d-xl-inline-block"> Stats </span>
+              </a>
+            </div>
+            <!-- ....sidebar--element -->
+            <div class="container-d-flex mb-3">
+              <a href="#" class="text-decoration-none text-white">
+                <i class="fa-solid fa-signal"></i>
+                <span class="d-none d-xl-inline-block"> Signal </span>
               </a>
             </div>
           </nav>
@@ -66,17 +81,32 @@
                 <div class="badge badge--custom mx-1">Piano blaze</div>
               </div>
               <!-- badges -->
-              <div class="container d-flex px-0">
+              <div class="container d-flex px-0 align-items-center">
                 <div class="badge badge--custom">3app</div>
                 <i class="fa-solid fa-angles-right mx-1"></i>
+                <!-- ....badge..collapse -->
+
+                <button
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#badgesExpand"
+                  class="btn badge border-none badge--custom mx-2"
+                >
+                  +
+                </button>
+                <div class="collapse" id="badgesExpand">
+                  <div class="badge badge--custom">Boolean mobile app</div>
+                  <div class="badge badge--custom">Boolean web app</div>
+                  <div class="badge badge--custom">Boolean blog app</div>
+                </div>
               </div>
             </div>
             <!-- online -->
-            <div class="col-sm-12 col-md-4 col-lg-3">
+            <div class="col-sm-12 col-md-4 col-lg-3 text-end">
               <div class="container d-flex align-items-center px-0">
                 <span> Studenti online negli ultimi 30 minuti </span>
               </div>
-              <div class="container d-flex">
+              <div class="container d-flex justify-content-end">
                 <h2>125</h2>
               </div>
             </div>
