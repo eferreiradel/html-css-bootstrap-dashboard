@@ -151,11 +151,85 @@
                   >Nuovo studente
                   <button
                     type="button"
-                    class="btn btn-outline-light mx-3 align-self-baseline"
+                    class="btn btn-outline-light mx-3 align-self-baseline btn btn-primary"
+                    data-bs-toggle="offcanvas"
+                    href="#offcanvas"
+                    role="button"
+                    aria-controls="offcanvas"
                   >
                     +
                   </button>
                 </span>
+                <!-- offcanvas -->
+                <div
+                  class="offcanvas offcanvas-start show px-3 bg-light"
+                  tabindex="-1"
+                  id="offcanvas"
+                  aria-labelledby="offcanvasDarkLabel"
+                >
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvas">Nuovo alunno</h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="offcanvas"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <form action="post">
+                      <input
+                        type="text"
+                        class="form-control mb-3 shadow-sm"
+                        placeholder="Nome"
+                        required
+                      />
+                      <input
+                        type="text"
+                        class="form-control mb-3 shadow-sm"
+                        placeholder="Cognome"
+                        required
+                      />
+                      <div class="input-group mb-3">
+                        <span
+                          class="input-group-text shadow-sm"
+                          id="basic-addon1"
+                          >@</span
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Email"
+                          aria-label="Username"
+                          aria-describedby="basic-addon1"
+                          required
+                        />
+                      </div>
+                      <input
+                        type="password"
+                        class="form-control mb-3 shadow-sm"
+                        placeholder="password"
+                      />
+                      <div class="input-group mb-3">
+                        <input
+                          type="text"
+                          class="form-control shadow-sm"
+                          placeholder="Indirizzo"
+                          aria-label="Indirizzo"
+                        />
+                        <span class="input-group-text shadow-sm">
+                          <i class="fa fa-location-pin"></i>
+                        </span>
+                        <input
+                          type="text"
+                          class="form-control shadow-sm"
+                          placeholder="Città"
+                          aria-label="Città"
+                        />
+                      </div>
+                    </form>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
