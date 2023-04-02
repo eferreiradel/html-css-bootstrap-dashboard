@@ -29,31 +29,38 @@
       <div class="row">
         <!-- ....navbar.... -->
         <nav class="navbar navbar--height px-2">
-          <div class="navbar-brand">NAV</div>
+          <div class="navbar-brand py-0">
+            <img src="./img/mobile-logo.png" class="d-lg-none" width="50" />
+            <img src="./img/logo.svg" class="d-none d-lg-block" />
+          </div>
+          <div class="navbar-nav">NAV</div>
         </nav>
       </div>
 
       <!-- ....main -->
       <div class="row">
         <!-- sidebar -->
-        <div class="col-1 bg-dark py-2 sidebar--height text-white">
+        <div
+          class="col-2 col-md-1 bg-dark py-2 sidebar--height text-white py-4 px-2"
+        >
           <nav>
-            <a
-              href="#"
-              class="text-decoration-none d-flex align-items-center justify-content-center"
-            >
-              <i class="fa-solid fa-house"></i>
-              <span class="px-1">Home</span>
-            </a>
+            <div class="container-d-flex text-center">
+              <a href="#" class="text-decoration-none text-white">
+                <i class="fa-solid fa-house"></i>
+                <span class="d-none d-lg-inline-block"> Home </span>
+              </a>
+            </div>
           </nav>
         </div>
 
         <!-- ....main--container -->
-        <div class="col-11 bg-light main--height overflow-y-auto">
+        <div
+          class="col-10 col-md-11 bg-light main--height overflow-y-auto pb-3"
+        >
           <!-- ....header--main.... -->
           <div class="row py-3 bg-primary text-light mb-4">
             <!-- boolean -->
-            <div class="col-sm-12 col-md-4 col-lg-6 py-2">
+            <div class="col-sm-12 col-md-4 col-lg-6">
               <div class="container d-flex align-items-center px-0">
                 <h2>Boolean</h2>
                 <div class="badge badge--custom mx-1">Piano blaze</div>
@@ -97,268 +104,121 @@
               <!-- ....prossime--classi -->
               <div class="card mb-3">
                 <div class="card-header">Prossime classi</div>
-                <div class="card-body px-4">
-                  <!-- ....riga tabella titoli.... -->
-                  <div class="row border-bottom">
-                    <div class="col-4 col-md-5 py-2 my-2">Nome</div>
+                <div class="card-body px-2">
+                  <!-- ....table -->
+                  <div class="container-fluid">
+                    <!-- ....table--row--header -->
+                    <div class="row py-2">
+                      <div class="col-4 col-md-5 px-0">
+                        <span> Nome </span>
+                      </div>
+                      <div class="col-md-2 d-none d-md-block text-center px-0">
+                        Data inizio
+                      </div>
+                      <div class="col-md-1 d-none d-md-block text-center px-0">
+                        <span>ROI</span>
+                      </div>
+                      <div class="col-4 col-md-2 text-center px-0">Stato</div>
+                      <div class="col-4 col-md-2 text-center px-0">Azioni</div>
+                    </div>
+                    <!-- ....table--row -->
                     <div
-                      class="d-none d-md-block col-md-2 py-2 my-2 text-center"
+                      class="row border-bottom py-2 d-flex align-items-center bg-"
                     >
-                      <span> Data inizio </span>
-                    </div>
-                    <div
-                      class="d-none d-md-block col-md-2 py-2 my-2 text-center"
-                    >
-                      <span> ROI </span>
-                    </div>
-                    <div class="col-3 col-md-1 px-0 py-2 my-2 text-center">
-                      <span> Stato </span>
-                    </div>
-                    <div class="col-5 col-md-2 py-2 px-0 my-2 text-center">
-                      <span> Azioni </span>
-                    </div>
-                  </div>
-                  <!-- ....riga tabella.... -->
-                  <div class="row border-bottom">
-                    <div class="col-4 col-md-5 py-2 my-2">
-                      <img src="./img/class-avatar.jpg" width="30" />
-                      Classe 75
-                    </div>
-                    <div
-                      class="col-4 col-md-2 py-2 my-2 px-0 text-center d-none d-md-block"
-                    >
-                      <span> 15 Feb 2021 </span>
-                    </div>
-                    <div
-                      class="col-3 col-md-2 py-2 my-2 px-0 text-center d-none d-md-block"
-                    >
-                      <span> 20% </span>
-                    </div>
-                    <div class="col-3 col-md-1 py-2 my-2 px-0 text-center">
-                      <span class="badge bg-success align-self">Done </span>
-                    </div>
-                    <div class="col-5 col-md-2 px-0 py-2 my-2 text-center">
-                      <span>
+                      <div class="col-4 col-md-5 d-flex px-0">
+                        <span>
+                          <img
+                            src="./img/class-avatar.jpg"
+                            width="40"
+                            class=""
+                          />
+                          Classe 75
+                        </span>
+                      </div>
+                      <div class="col-md-2 d-none d-md-block px-0 text-center">
+                        12 Feb 2021
+                      </div>
+                      <div class="col-md-1 d-none d-md-block text-center px-0">
+                        <span>20%</span>
+                      </div>
+                      <div class="col-4 col-md-2 text-center px-0">
+                        <span class="badge bg-success">Done</span>
+                      </div>
+                      <div class="col-4 col-md-2 text-center px-0">
                         <button type="button" class="btn btn-outline-dark">
                           <i class="fa-solid fa-pen"></i>
                         </button>
                         <button type="button" class="btn btn-outline-dark">
                           <i class="fa-solid fa-trash"></i>
                         </button>
-                      </span>
+                      </div>
                     </div>
-                  </div>
-                  <!-- ....riga tabella.... -->
-                  <div class="row border-bottom">
-                    <div class="col-4 col-md-5 py-2 my-2">
-                      <img src="./img/class-avatar.jpg" width="30" />
-                      Classe 76
-                    </div>
+                    <!-- ....table--row -->
                     <div
-                      class="col-4 col-md-2 py-2 my-2 px-0 text-center d-none d-md-block"
+                      class="row border-bottom py-2 d-flex align-items-center bg-"
                     >
-                      <span> 16 Feb 2021 </span>
-                    </div>
-                    <div
-                      class="col-3 col-md-2 py-2 my-2 px-0 text-center d-none d-md-block"
-                    >
-                      <span> 20% </span>
-                    </div>
-                    <div class="col-3 col-md-1 py-2 my-2 px-0 text-center">
-                      <span class="badge bg-success align-self">Done </span>
-                    </div>
-                    <div class="col-5 col-md-2 px-0 py-2 my-2 text-center">
-                      <span>
+                      <div class="col-4 col-md-5 d-flex px-0">
+                        <span>
+                          <img
+                            src="./img/class-avatar.jpg"
+                            width="40"
+                            class=""
+                          />
+                          Classe 76
+                        </span>
+                      </div>
+                      <div class="col-md-2 d-none d-md-block px-0 text-center">
+                        16 Feb 2021
+                      </div>
+                      <div class="col-md-1 d-none d-md-block text-center px-0">
+                        <span>20%</span>
+                      </div>
+                      <div class="col-4 col-md-2 text-center px-0">
+                        <span class="badge bg-success">Done</span>
+                      </div>
+                      <div class="col-4 col-md-2 text-center px-0">
                         <button type="button" class="btn btn-outline-dark">
                           <i class="fa-solid fa-pen"></i>
                         </button>
                         <button type="button" class="btn btn-outline-dark">
                           <i class="fa-solid fa-trash"></i>
                         </button>
-                      </span>
+                      </div>
                     </div>
-                  </div>
-                  <!-- ....riga tabella.... -->
-                  <div class="row border-bottom">
-                    <div class="col-4 col-md-5 py-2 my-2">
-                      <img src="./img/class-avatar.jpg" width="30" />
-                      Classe 77
-                    </div>
+                    <!-- ....table--row -->
                     <div
-                      class="col-4 col-md-2 py-2 my-2 px-0 text-center d-none d-md-block"
+                      class="row border-bottom py-2 d-flex align-items-center bg-"
                     >
-                      <span> 17 Feb 2021 </span>
-                    </div>
-                    <div
-                      class="col-3 col-md-2 py-2 my-2 px-0 text-center d-none d-md-block"
-                    >
-                      <span> 20% </span>
-                    </div>
-                    <div class="col-3 col-md-1 py-2 my-2 px-0 text-center">
-                      <span class="badge bg-warning align-self">Process </span>
-                    </div>
-                    <div class="col-5 col-md-2 px-0 py-2 my-2 text-center">
-                      <span>
+                      <div class="col-4 col-md-5 d-flex px-0">
+                        <span>
+                          <img
+                            src="./img/class-avatar.jpg"
+                            width="40"
+                            class=""
+                          />
+                          Classe 77
+                        </span>
+                      </div>
+                      <div class="col-md-2 d-none d-md-block px-0 text-center">
+                        1 Feb 2021
+                      </div>
+                      <div class="col-md-1 d-none d-md-block text-center px-0">
+                        <span>20%</span>
+                      </div>
+                      <div class="col-4 col-md-2 text-center px-0">
+                        <span class="badge bg-warning">Progress</span>
+                      </div>
+                      <div class="col-4 col-md-2 text-center px-0">
                         <button type="button" class="btn btn-outline-dark">
                           <i class="fa-solid fa-pen"></i>
                         </button>
                         <button type="button" class="btn btn-outline-dark">
                           <i class="fa-solid fa-trash"></i>
                         </button>
-                      </span>
+                      </div>
                     </div>
                   </div>
-                  <!-- ....riga tabella.... -->
-                  <div class="row border-bottom">
-                    <div class="col-4 col-md-5 py-2 my-2">
-                      <img src="./img/class-avatar.jpg" width="30" />
-                      Classe 78
-                    </div>
-                    <div
-                      class="col-4 col-md-2 py-2 my-2 px-0 text-center d-none d-md-block"
-                    >
-                      <span> 18 Feb 2021 </span>
-                    </div>
-                    <div
-                      class="col-3 col-md-2 py-2 my-2 px-0 text-center d-none d-md-block"
-                    >
-                      <span> 20% </span>
-                    </div>
-                    <div class="col-3 col-md-1 py-2 my-2 px-0 text-center">
-                      <span class="badge bg-success align-self">Done </span>
-                    </div>
-                    <div class="col-5 col-md-2 px-0 py-2 my-2 text-center">
-                      <span>
-                        <button type="button" class="btn btn-outline-dark">
-                          <i class="fa-solid fa-pen"></i>
-                        </button>
-                        <button type="button" class="btn btn-outline-dark">
-                          <i class="fa-solid fa-trash"></i>
-                        </button>
-                      </span>
-                    </div>
-                  </div>
-                  <!-- ....riga tabella.... -->
-                  <div class="row border-bottom">
-                    <div class="col-4 col-md-5 py-2 my-2">
-                      <img src="./img/class-avatar.jpg" width="30" />
-                      Classe 79
-                    </div>
-                    <div
-                      class="col-4 col-md-2 py-2 my-2 px-0 text-center d-none d-md-block"
-                    >
-                      <span> 19 Feb 2021 </span>
-                    </div>
-                    <div
-                      class="col-3 col-md-2 py-2 my-2 px-0 text-center d-none d-md-block"
-                    >
-                      <span> 20% </span>
-                    </div>
-                    <div class="col-3 col-md-1 py-2 my-2 px-0 text-center">
-                      <span class="badge bg-danger align-self">Failed </span>
-                    </div>
-                    <div class="col-5 col-md-2 px-0 py-2 my-2 text-center">
-                      <span>
-                        <button type="button" class="btn btn-outline-dark">
-                          <i class="fa-solid fa-pen"></i>
-                        </button>
-                        <button type="button" class="btn btn-outline-dark">
-                          <i class="fa-solid fa-trash"></i>
-                        </button>
-                      </span>
-                    </div>
-                  </div>
-                  <!-- ....riga tabella.... -->
-                  <div class="row border-bottom">
-                    <div class="col-4 col-md-5 py-2 my-2">
-                      <img src="./img/class-avatar.jpg" width="30" />
-                      Classe 80
-                    </div>
-                    <div
-                      class="col-4 col-md-2 py-2 my-2 px-0 text-center d-none d-md-block"
-                    >
-                      <span> 20 Feb 2021 </span>
-                    </div>
-                    <div
-                      class="col-3 col-md-2 py-2 my-2 px-0 text-center d-none d-md-block"
-                    >
-                      <span> 20% </span>
-                    </div>
-                    <div class="col-3 col-md-1 py-2 my-2 px-0 text-center">
-                      <span class="badge bg-success">Success </span>
-                    </div>
-                    <div class="col-5 col-md-2 px-0 py-2 my-2 text-center">
-                      <span>
-                        <button type="button" class="btn btn-outline-dark">
-                          <i class="fa-solid fa-pen"></i>
-                        </button>
-                        <button type="button" class="btn btn-outline-dark">
-                          <i class="fa-solid fa-trash"></i>
-                        </button>
-                      </span>
-                    </div>
-                  </div>
-                  <!-- ....riga tabella.... -->
-                  <div class="row border-bottom">
-                    <div class="col-4 col-md-5 py-2 my-2">
-                      <img src="./img/class-avatar.jpg" width="30" />
-                      Classe 81
-                    </div>
-                    <div
-                      class="col-4 col-md-2 py-2 my-2 px-0 text-center d-none d-md-block"
-                    >
-                      <span> 21 Feb 2021 </span>
-                    </div>
-                    <div
-                      class="col-3 col-md-2 py-2 my-2 px-0 text-center d-none d-md-block"
-                    >
-                      <span> 20% </span>
-                    </div>
-                    <div class="col-3 col-md-1 py-2 my-2 px-0 text-center">
-                      <span class="badge bg-danger">Failed </span>
-                    </div>
-                    <div class="col-5 col-md-2 px-0 py-2 my-2 text-center">
-                      <span>
-                        <button type="button" class="btn btn-outline-dark">
-                          <i class="fa-solid fa-pen"></i>
-                        </button>
-                        <button type="button" class="btn btn-outline-dark">
-                          <i class="fa-solid fa-trash"></i>
-                        </button>
-                      </span>
-                    </div>
-                  </div>
-                  <!-- ....riga tabella.... -->
-                  <div class="row border-bottom">
-                    <div class="col-4 col-md-5 py-2 my-2">
-                      <img src="./img/class-avatar.jpg" width="30" />
-                      Classe 82
-                    </div>
-                    <div
-                      class="col-4 col-md-2 py-2 my-2 px-0 text-center d-none d-md-block"
-                    >
-                      <span> 22 Feb 2021 </span>
-                    </div>
-                    <div
-                      class="col-3 col-md-2 py-2 my-2 px-0 text-center d-none d-md-block"
-                    >
-                      <span> 20% </span>
-                    </div>
-                    <div class="col-3 col-md-1 py-2 my-2 px-0 text-center">
-                      <span class="badge bg-success">Success </span>
-                    </div>
-                    <div class="col-5 col-md-2 px-0 py-2 my-2 text-center">
-                      <span>
-                        <button type="button" class="btn btn-outline-dark">
-                          <i class="fa-solid fa-pen"></i>
-                        </button>
-                        <button type="button" class="btn btn-outline-dark">
-                          <i class="fa-solid fa-trash"></i>
-                        </button>
-                      </span>
-                    </div>
-                  </div>
-                  <!-- ....fine riga tabella.... -->
+                  <!-- ....fine--table -->
                 </div>
               </div>
 
@@ -513,18 +373,18 @@
                     <div class="card-body">
                       <h5 class="card-title">Utenti attivi</h5>
                       <p class="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
+                        Lista degli utenti in piattaforma nell'ultimo mese
                       </p>
                     </div>
                     <ul class="list-group list-group-flush">
-                      <li class="list-group-item">Cras justo odio</li>
-                      <li class="list-group-item">Dapibus ac facilisis in</li>
-                      <li class="list-group-item">Vestibulum at eros</li>
+                      <li class="list-group-item">Gennaio: 1200</li>
+                      <li class="list-group-item">Febbraio: 800</li>
+                      <li class="list-group-item">Marzo: 1500</li>
                     </ul>
                     <div class="card-body">
-                      <a href="#" class="card-link">Card link</a>
-                      <a href="#" class="card-link">Another link</a>
+                      <a href="#" class="card-link"
+                        >Visualizza report approfondito</a
+                      >
                     </div>
                   </div>
                 </div>
