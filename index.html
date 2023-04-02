@@ -27,40 +27,46 @@
   <body>
     <div class="container-fluid">
       <div class="row">
-        <!-- ....navbar.... -->
-        <nav class="navbar navbar--height px-2 border">
-          <div class="navbar-brand py-0">
-            <img src="./img/mobile-logo.png" class="d-lg-none" width="50" />
-            <img src="./img/logo.svg" class="d-none d-lg-block" />
-          </div>
-          <!-- searchbar -->
-          <form action="post" class="flex-grow-1">
-            <div class="input-group">
-              <div class="input-group-text rounded-start-pill">
-                <i class="fa fa-search"></i>
-              </div>
-              <input
-                type="text"
-                class="bg-light shadow-sm border rounded-end-pill form-control"
+        <div class="navbar--height d-flex align-items-center bg-light">
+          <div class="d-flex flex-row align-items-center w-100">
+            <div>
+              <img
+                src="./img/mobile-logo.png"
+                class="d-sm-block d-md-none"
+                width="50"
               />
+              <img src="./img/logo.svg" class="d-none d-md-block" />
             </div>
-          </form>
-          <!-- nav -->
-          <div class="navbar-nav d-flex flex-row flex-">
-            <a href="#">
-              <i class="fa fa-list-dots navBar--i"></i>
-            </a>
-            <a href="#">
-              <i class="fa fa-question-circle navBar--i"></i>
-            </a>
-            <a href="#">
-              <i class="fa fa-comment-dots navBar--i"></i>
-            </a>
-            <a href="#">
-              <i class="fa fa-bell text-warning"></i>
-            </a>
+            <div class="flex-grow-1 px-3">
+              <div class="input-group bg-li">
+                <span class="input-group-text" id="basic-addon1">
+                  <i class="fa fa-search"></i>
+                </span>
+                <input
+                  type="text"
+                  class="form-control bg-light"
+                  placeholder="Cerca lezioni su Lavarel"
+                  aria-label="Cerca Lavarel"
+                  aria-describedby="basic-addon1"
+                />
+              </div>
+            </div>
+            <div class="d-flex">
+              <a href="#" class="d-none d-md-block">
+                <i class="fa fa-list-dots navBar--i"></i>
+              </a>
+              <a href="#" class="d-none d-md-block">
+                <i class="fa fa-question-circle navBar--i"></i>
+              </a>
+              <a href="#" class="d-none d-md-block">
+                <i class="fa fa-comment-dots navBar--i"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-bell text-warning"></i>
+              </a>
+            </div>
           </div>
-        </nav>
+        </div>
       </div>
 
       <!-- ....main -->

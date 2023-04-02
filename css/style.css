@@ -6,10 +6,14 @@
   font-weight: ;
 } */
 
+body {
+  background-color: aqua;
+}
 /* } */
 
 /* ....layout.... */
 .navbar--height {
+  width: 100%;
   height: 70px;
   max-height: 70px;
 }
